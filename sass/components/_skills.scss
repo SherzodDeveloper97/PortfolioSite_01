@@ -1,0 +1,63 @@
+//Skills
+.skills{
+    .container{
+        padding-top: 9.1rem;
+        padding-bottom: 11rem;
+    }
+    .skills_title{
+        margin-bottom: 8.3rem;
+        h3{
+            @include style-text-bold;
+            padding-bottom: 4.9rem;
+        }
+        p{
+            @include style-text;
+            text-align: center;
+        }
+    }
+    .skills_block{
+        @include flex-block;
+        justify-content: space-around;
+        .skill{
+            text-align: center;
+        }
+        p{
+            font-size: 2rem;
+            line-height: 1.7rem;
+            letter-spacing: 0em;
+            text-align: center;
+            color: $color;
+            font-weight: $bold;
+            padding-top: 1.2rem;
+        }
+    }
+    .percent_block{
+        width: 100%;
+        background-color:#dfe6e9;
+        margin-top: 3.5rem;
+        .percent{
+            height: 1.3rem;
+            background-color:#00cec9; 
+            position: relative;
+        }
+        .percent-number{
+            position: absolute;
+            top: -16px;
+            right: 0;
+            font-size: 1.3rem;
+            font-weight: $bold;
+        }
+        .percent-one{
+            width: 90%;
+        }
+        .percent-two{
+            width: 80%;
+        }
+        .percent-three{
+            width: 70%;
+        }
+        .percent-fourth{
+            width: 60%;
+        }
+    }
+}

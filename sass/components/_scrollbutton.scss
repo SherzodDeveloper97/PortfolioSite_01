@@ -1,0 +1,25 @@
+//Scroll To Top
+.scroll-to-top{
+    .gotobtn{
+        position: fixed;
+        width: 46px;
+        height: 46px;
+        background:#0984e3;
+        right: 26px;
+        bottom: 60px;
+        @include flex-center;
+        pointer-events: none;
+        transition: all 0.4s ease-in-out;
+        text-decoration: none; 
+        opacity: 0;
+        border-radius:5px;
+        &.active_up{
+            pointer-events: auto;
+            opacity: 1;
+        }
+        .arrow_up{
+            width: 34px;
+            height: 34px;
+        }
+    }
+}

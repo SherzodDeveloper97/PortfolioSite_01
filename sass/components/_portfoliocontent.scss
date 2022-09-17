@@ -1,0 +1,49 @@
+//Portfolio
+.portfolio{
+    background-color: $color-other;
+    .container{
+        padding-top: 11.2rem;
+        padding-bottom: 9.6rem;
+    }
+    .portfolio-title{
+        margin-bottom: 4.7rem;
+        h2{
+            @include style-text-bold;
+        }
+    }
+    .portfolio_content{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        &:not(:last-child){
+            margin-bottom: 9.9rem;
+        }
+        a{
+            img{
+                width: 100%;
+                height: auto;
+                box-shadow: 0 0 2px $color-other;
+                transition: all 0.5s ease;
+                vertical-align: middle;
+                &:hover{
+                    box-shadow: 0 0 2px #000;
+                    // transform: scale(1.1);
+                }
+            }
+        }
+        .title{
+            padding-top: 2.4rem;
+            @include style-text;
+            text-align: center;
+            a{
+                text-decoration: underline;
+                color:$color;
+            }
+        }
+        .second_project{
+            font-family: 'Revalia';
+            color:$color;
+            font-weight: $medium;
+        }
+    }
+}

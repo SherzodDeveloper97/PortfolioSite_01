@@ -1,0 +1,60 @@
+//Contact
+.contact{
+    background-color: #fff;
+    .container{
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+        text-align: center;
+    }
+    .contact_title{
+        margin-bottom: 2rem;
+        h2{
+            @include style-text-bold;
+        }
+    }
+    .contact_description{
+        margin-bottom: 2.9rem;
+        p{
+            @include style-text;
+            text-align: center;
+        }
+    }
+    .contact_button{
+        margin-bottom: 8rem;
+        a{
+            display:inline-block;
+            padding:1.2rem 2.8rem;
+            border-radius: 25px;
+            @include style-text;
+            font-weight: $bold;
+            text-align: center;
+            color:#fff;
+            background-color:$color;            
+        }
+    }
+    .social_networks{
+        margin-bottom: 4.5rem;
+        ul{
+            @include flex-center;
+            li{
+                &:not(:last-child){
+                    margin-right: 6rem;
+                }
+            }
+        }
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .item{
+        p{
+            font-size: 1.4rem;
+            font-weight: $medium;
+            line-height: 1.7rem;
+            letter-spacing: 0em;
+            text-align: center;
+            color: #828282;
+        }
+    }
+}

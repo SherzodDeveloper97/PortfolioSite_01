@@ -1,0 +1,20 @@
+//About-me
+.about-me{
+    background-color: $color-other;
+    .container{
+        text-align: center;
+        padding-top: 12rem;
+        padding-bottom: 10.7rem;
+    }
+    h2{
+        @include style-text-bold;
+        margin-bottom: 1.7rem;
+    }
+    p{
+        @include style-text;
+        text-align: center;
+        &:not(:last-child){
+            margin-bottom: 4.7rem;
+        }
+    }
+}

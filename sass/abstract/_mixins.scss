@@ -1,0 +1,28 @@
+// Mixins - open
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin style-text {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color:$color;
+    font-weight: $medium;
+}
+@mixin style-text-bold {
+    font-size: 3.4rem;
+    line-height: 4.2rem;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $color;
+    font-weight: $bold;
+}
+// Mixins - close
