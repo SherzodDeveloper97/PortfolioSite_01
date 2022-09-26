@@ -95,19 +95,13 @@
         .skills .skills_title h3{
             padding-bottom: 2.9rem;
         }
-        .skills .skills_block .skill{
-            // margin-bottom: 2rem;
-            margin: 0 2rem 2rem 2rem;
-            &:not(:first-child){
-                // margin-left: 3rem;
-            }
-            &:last-child{
-                // margin-left: 0;
-            }
+        .skills .skills_block{
+            row-gap: 20px;
+            column-gap: 20px;
         }
         .skills .skills_block{
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: space-evenly;
         }
         .portfolio .portfolio_content{
             width: 100%;

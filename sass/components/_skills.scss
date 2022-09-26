@@ -17,9 +17,12 @@
     }
     .skills_block{
         @include flex-block;
-        justify-content: space-around;
         .skill{
             text-align: center;
+            img{
+                width: 110px;
+                height: 96px;
+            }
         }
         p{
             font-size: 2rem;
@@ -58,6 +61,15 @@
         }
         .percent-fourth{
             width: 60%;
+        }
+        .percent-five{
+            width: 50%;
+        }
+        .percent-six{
+            width: 40%;
+        }
+        .percent-seven{
+            width: 70%;
         }
     }
 }
